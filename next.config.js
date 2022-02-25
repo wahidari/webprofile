@@ -1,7 +1,7 @@
 module.exports = {
   env: {
-    BASE_URL: "http://localhost:5000",
-    API_ROUTE: "http://127.0.0.1:8000",
+    BASE_URL: "https://webprofiletes.vercel.app",
+    API_ROUTE: "http://coredesa.arkatama.dev",
   },
   reactStrictMode: true,
   images: {
