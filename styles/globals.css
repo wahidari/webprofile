@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+	font-family: "Poppins", sans-serif !important;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.bg-red {
+	background-color: #ff5b5c !important;
+}
+
+.bg-blue {
+	background-color: #5a8dee !important;
+}
+
+.bg-cyan {
+	background-color: #00cfdd !important;
+}
+
+.bg-green {
+	background-color: #10b981 !important;
+}
+
+.bg-yellow {
+	background-color: #fdac41 !important;
+}
+
+.bg-orange {
+	background-color: #fd7e14 !important;
+}
+
+.bg-purple {
+	background-color: #6f42c1 !important;
+}
+
+.bg-gray {
+	background-color: #394c62 !important;
+}
+
+.text-red {
+	color: #ff5b5c !important;
+}
+
+.text-blue {
+	color: #5a8dee !important;
+}
+
+.text-green {
+	color: #10b981 !important;
+}
+
+.text-yellow {
+	color: #fba918 !important;
+}
+
+.border-red {
+	border: 1px solid #ff5b5c !important;
+}
+
+.border-blue {
+	border: 1px solid #5a8dee !important;
+}
+
+.border-green {
+	border: 1px solid #10b981 !important;
+}
+
+.border-yellow {
+	border: 1px solid #fba918 !important;
+}
+
+.fw-medium {
+	font-weight: 500 !important;
+}
+
+.fw-600 {
+	font-weight: 600 !important;
+}
+
+.text-color-primary {
+	color: #212529;
+}
+
+.text-color-secondary {
+	color: #343a40;
+}
+
+.text-color-tertiary {
+	color: #495057;
+}
+
+.text-color-muted {
+	color: #6c757d;
+}
+
+.fs-13 {
+	font-size: 13px !important;
+}
+
+.fs-14 {
+	font-size: 14px !important;
+}
+
+.fs-15 {
+	font-size: 15px !important;
+}
+
+.fs-18 {
+	font-size: 18px !important;
+}
+
+/* Very Small devices (Max width 575.98px) */
+@media (max-width: 575.98px) {
+	.carousel-item img {
+		height: 300px !important;
+	}
+	.agenda img {
+		width: 550px !important;
+		height: 200px !important;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.carousel-item img {
+		height: 400px !important;
+	}
+	.agenda img {
+		width: 350px !important;
+		height: 150px !important;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.carousel-item img {
+		height: 500px !important;
+	}
+	.agenda img {
+		width: 250px !important;
+		height: 170px !important;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.agenda img {
+		width: 250px !important;
+		height: 150px !important;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* Caarousel Image Zoom Effect */
+@-webkit-keyframes zoom {
+	from {
+		-webkit-transform: scale(1, 1);
+	}
+	to {
+		-webkit-transform: scale(1.2, 1.2);
+	}
+}
+
+@keyframes zoom {
+	from {
+		transform: scale(1, 1);
+	}
+	to {
+		transform: scale(1.2, 1.2);
+	}
+}
+
+.carousel-zoom {
+	-webkit-animation: zoom 20s;
+	animation: zoom 20s;
+}
+
+/* Swiper Blog Post  */
+.swiper-custom {
+	padding: 14px 14px 50px 14px !important;
+}
+
+/* Progress Bar on Top of Page  */
+#nprogress .bar {
+	background: #0d6efd !important;
+}
+
+#nprogress .spinner-icon {
+	display: none;
+}
+
+/* Product Image hover zoom effect */
+.card-img-hover-zoom img {
+	transition: transform 0.8s ease !important;
+}
+.card-img-hover-zoom:hover img {
+	transform: scale(1.1) !important;
+}
+
+/* youtube embed play button */
+.yt-lite > .lty-playbtn {
+	transition: all 0.4s !important;
+}
+
+.yt-lite:hover > .lty-playbtn {
+	background-color: #ff0000;
+}
+
+.yt-lite::before {
+	height: 100% !important;
+	background-size: contain;
+}
