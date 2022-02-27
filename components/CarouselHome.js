@@ -24,7 +24,7 @@ export default function CarouselHome({heros}) {
                         font-size: 24px !important;
                     }
                     .carousel-caption {
-                        bottom: 5em !important;
+                        bottom: 5.5em !important;
                     }
                     .carousel-text {
                         font-size: 16px !important;
@@ -46,7 +46,7 @@ export default function CarouselHome({heros}) {
                 }
                 @media (min-width: 768px) and (max-width: 991.98px) {
                     .carousel-caption {
-                        bottom: 10em !important;
+                        bottom: 11em !important;
                     }
                     .carousel-overlay {
                         height: 98% !important;
@@ -54,7 +54,7 @@ export default function CarouselHome({heros}) {
                 }
                 @media (min-width: 992px) and (max-width: 1199.98px) {
                     .carousel-caption {
-                        bottom: 10em !important;
+                        bottom: 12em !important;
                     }
                     .carousel-overlay {
                         height: 98%;
