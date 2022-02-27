@@ -56,7 +56,11 @@ export default function Sejarah({ profiles, settings, visimisi }) {
 };
 
 // This gets called on every request to this page
-export async function getServerSideProps() {
+export async function getServerSideProps({ res }) {
+    res.setHeader(
+        'Cache-Control',
+        'public, s-maxage=10, stale-while-revalidate=59'
+    )
     const getVisiMisi = await fetch(`${process.env.API_ROUTE}/profil/visi-misi`);
     const visimisi = await getVisiMisi.json();
     const getAllProfiles = await fetch(`${process.env.API_ROUTE}/profil`);

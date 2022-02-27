@@ -120,7 +120,11 @@ export default function Kategori({ profiles, settings, agendas, idKategori, nama
 };
 
 // This gets called on every request to this page
-export async function getServerSideProps({ params }) {
+export async function getServerSideProps({ params, res }) {
+    res.setHeader(
+        'Cache-Control',
+        'public, s-maxage=10, stale-while-revalidate=59'
+    )
     // console.log(params)
     const paramSplit = params.id.split("-");
     // get kategori id 

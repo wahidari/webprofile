@@ -112,7 +112,11 @@ export default function Agenda({ profiles, settings, agendas }) {
 };
 
 // This gets called on every request to this page
-export async function getServerSideProps() {
+export async function getServerSideProps({ res }) {
+    res.setHeader(
+        'Cache-Control',
+        'public, s-maxage=10, stale-while-revalidate=59'
+    )
     const getAllProfiles = await fetch(`${process.env.API_ROUTE}/profil`);
     const profiles = await getAllProfiles.json();
     const getAllSettings = await fetch(`${process.env.API_ROUTE}/web/setting`);
