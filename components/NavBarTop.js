@@ -47,12 +47,12 @@ export default function NavBarTop({profile}) {
                     <div className="row">
                         <div className="col-lg-6 col-sm-8">
                             <div className="">
-                                <a href="https://wa.me/68123456789" rel="noreferrer" target="_blank" className="text-decoration-none fs-14 text-white-80">
+                                <a href={`https://wa.me/${profile.phone_kantor}`} rel="noreferrer" target="_blank" className="text-decoration-none fs-14 text-white-80">
                                     <i className="me-2"><FaPhoneAlt /></i>
                                     {profile.phone_kantor}
                                 </a>
                                 <span className="mx-2 text-black-50">|</span>
-                                <a href="mailto:admin@gmail.com" rel="noreferrer" target="_blank" className="text-decoration-none fs-14 text-white-80">
+                                <a href={profile.email_desa ? `mailto:${profile.email_desa}` : "#"} aria-label="Email" rel="noreferrer" target="_blank" className="text-decoration-none fs-14 text-white-80">
                                     <i className="me-2"><FaRegEnvelope /></i>
                                     {profile.email_desa}
                                 </a>
