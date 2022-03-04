@@ -25,7 +25,7 @@ export default function PembangunanCard({ id, image, title, slug, author, date, 
                             </p>
                         </div>
                         <div className="progress">
-                            <div className="progress-bar w-25 bg-red" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                            <div className="progress-bar w-25 bg-red" aria-label="Progress" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ export default function PembangunanCard({ id, image, title, slug, author, date, 
                             </p>
                         </div>
                         <div className="progress">
-                            <div className="progress-bar w-50 bg-yellow" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                            <div className="progress-bar w-50 bg-yellow" aria-label="Progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@ export default function PembangunanCard({ id, image, title, slug, author, date, 
                             </p>
                         </div>
                         <div className="progress">
-                            <div className="progress-bar w-75 bg-blue" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                            <div className="progress-bar w-75 bg-blue" aria-label="Progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ export default function PembangunanCard({ id, image, title, slug, author, date, 
                             </p>
                         </div>
                         <div className="progress">
-                            <div className="progress-bar w-100 bg-green" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                            <div className="progress-bar w-100 bg-green" aria-label="Progress" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
                         </div>
                     </div>
                 </div>
