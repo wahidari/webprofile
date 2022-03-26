@@ -5,8 +5,8 @@ import Router from 'next/router';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css'; //styles of nprogress
 
-Router.events.on('routeChangeStart', () => NProgress.start()); 
-Router.events.on('routeChangeComplete', () => NProgress.done()); 
+Router.events.on('routeChangeStart', () => NProgress.start());
+Router.events.on('routeChangeComplete', () => NProgress.done());
 Router.events.on('routeChangeError', () => NProgress.done());
 
 function MyApp({ Component, pageProps }) {
@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
     // import bootstrap js in client
     typeof document !== undefined ? require('bootstrap/dist/js/bootstrap.bundle.min') : null
   }, []);
-  
+
   return <Component {...pageProps} />
 }
 

@@ -10,32 +10,32 @@ export default function pembangunanDetail({ profiles, settings, pembangunan }) {
     <>
       <style jsx>
         {`
-                .shadow-custom {
-                    box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
-                }
-                .w-13 {
-                    width: 13rem;
-                }
-                .w-2 {
-                    width: 2rem;
-                }
-                @media (min-width: 768px) {
-                    .border-top-md{
-                        border-top: 1px solid #dee2e6!important;
-                    }
-                    .border-start-md{
-                        border-left: 1px solid #dee2e6!important;
-                    }
-                }
-                @media (max-width: 767px) {
-                    .border-top-md{
-                        border-top: 0px;
-                    }
-                    .border-start-md{
-                        border-left: 0px;
-                    }
-                }
-            `}
+          .shadow-custom {
+            box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
+          }
+          .w-13 {
+            width: 13rem;
+          }
+          .w-2 {
+            width: 2rem;
+          }
+          @media (min-width: 768px) {
+            .border-top-md{
+              border-top: 1px solid #dee2e6!important;
+            }
+            .border-start-md{
+              border-left: 1px solid #dee2e6!important;
+            }
+          }
+          @media (max-width: 767px) {
+            .border-top-md{
+              border-top: 0px;
+            }
+            .border-start-md{
+              border-left: 0px;
+            }
+          }
+        `}
       </style>
 
       <Seo
