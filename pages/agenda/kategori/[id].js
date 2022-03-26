@@ -47,7 +47,7 @@ export default function Kategori({ profiles, settings, agendas, idKategori, nama
             <main>
                 <div className="bg-white">
                     <div className="container py-3">
-                        <p className="mb-0 fs-15 text-color-muted">Agenda dengan kategori : {categoryName} </p>
+                        <p className="mb-0 fs-15 text-color-muted">Agenda Dengan Kategori : <span className="fw-medium">{`"${categoryName}"`}</span> </p>
                     </div>
                 </div>
 
@@ -71,7 +71,7 @@ export default function Kategori({ profiles, settings, agendas, idKategori, nama
                             <div className="my-5 py-4 d-flex justify-content-center">
                                 <div className="col col-md-12 col-lg-6 my-5 alert text-red border-red d-flex align-items-center justify-content-center" role="alert">
                                     <div className="text-center">
-                                        <p>Tidak ditemukan Agenda dengan kategori <span className="fw-medium">{`"${namaKategori}"`}</span>.</p>
+                                        <p>Tidak ada Agenda dengan kategori <span className="fw-medium">{`"${namaKategori}"`}</span>.</p>
                                         <p className="mb-0">Kembali ke halaman {" "}
                                             <Link href="/agenda">
                                                 <a className="text-decoration-none">Agenda</a>

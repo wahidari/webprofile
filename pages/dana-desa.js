@@ -120,9 +120,9 @@ export default function DanaDesa({ profiles, settings, danadesa }) {
                         :
                         // jika tidak ada data, tampilkan eror
                         <div className="my-5 py-4 d-flex justify-content-center">
-                            <div className="col col-md-4 my-5 alert text-red border-red d-flex align-items-center justify-content-center" role="alert">
+                            <div className="col col-md-8 col-lg-6 my-5 alert text-red border-red d-flex align-items-center justify-content-center" role="alert">
                                 <div className="text-center">
-                                    <p className="mb-0">Data tidak ditemukan.</p>
+                                    <p className="mb-0">Tidak Ada Data Dana Desa</p>
                                 </div>
                             </div>
                         </div>

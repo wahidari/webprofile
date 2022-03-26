@@ -1,7 +1,7 @@
+import Image from "next/image";
 import NavBarTop from "@components/NavBarTop";
 import Footer from "@components/Footer";
 import BreadcrumbArea from "@components/BreadcrumbArea";
-import Image from "next/image";
 import BackToTop from "@components/BackToTop";
 import Seo from "@components/Seo";
 
@@ -41,7 +41,13 @@ export default function Struktur({ profiles, settings, struktur }) {
                             <div className="row g-4 my-3" key={index}>
                                 <div className="col-sm-3">
                                     <div className="card bg-white shadow-custom rounded border-0">
-                                        <Image alt="Image" src={item.photo} width={200} height={200} className="img-fluid mx-auto rounded" />
+                                        <Image
+                                            alt="Kepala Desa"
+                                            src={item.photo}
+                                            width={200}
+                                            height={200}
+                                            className="img-fluid mx-auto rounded"
+                                        />
                                     </div>
                                 </div>
                                 <div className="col-sm-9">
@@ -67,16 +73,7 @@ export default function Struktur({ profiles, settings, struktur }) {
                             </div>
                         )
                         :
-                        // jika tidak ada struktur, tampilkan eror
-                        // <div className="my-5 pt-2 text-center">
-                        //     <div className="mt-5 alert alert-danger d-flex align-items-center justify-content-center" role="alert">
-                        //         <div className="text-center">
-                        //             <p className="mb-0">Kepala desa tidak ditemukan.</p>
-                        //         </div>
-                        //     </div>
-                        // </div>
-                        <div className="py-5">
-                        </div>
+                        ""
                     }
 
                     <div className="row g-4 my-3">
@@ -86,7 +83,14 @@ export default function Struktur({ profiles, settings, struktur }) {
                                     <div className="row g-4">
                                         <div className="col-sm-3">
                                             <div className="card bg-white shadow-custom rounded border-0">
-                                                <Image alt="Image" src={item.photo} width={200} height={200} quality={90} className="img-fluid mx-auto rounded" />
+                                                <Image
+                                                    alt="Perangkat Desa"
+                                                    src={item.photo}
+                                                    width={200}
+                                                    height={200}
+                                                    quality={90}
+                                                    className="img-fluid mx-auto rounded"
+                                                />
                                             </div>
                                         </div>
                                         <div className="col-sm-9">
@@ -114,9 +118,9 @@ export default function Struktur({ profiles, settings, struktur }) {
                             :
                             // jika tidak ada struktur, tampilkan eror
                             <div className="my-5 py-4 d-flex justify-content-center">
-                                <div className="col col-md-4 my-5 alert text-red border-red d-flex align-items-center justify-content-center" role="alert">
+                                <div className="col col-md-8 col-lg-6 my-5 alert text-red border-red d-flex align-items-center justify-content-center" role="alert">
                                     <div className="text-center">
-                                        <p className="mb-0">Perangkat desa tidak ditemukan.</p>
+                                        <p className="mb-0">Tidak Ada Data Perangkat Desa</p>
                                     </div>
                                 </div>
                             </div>

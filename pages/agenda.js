@@ -15,11 +15,11 @@ export default function Agenda({ profiles, settings, agendas }) {
     // console.log(dataAgendas)
     // console.log(offset)
 
-    async function loadMore () {
+    async function loadMore() {
         setShowSpinner(true)
-        setOffset(offset+5)
+        setOffset(offset + 5)
         try {
-            const res = await axios.get(`${process.env.API_ROUTE}/agenda?limit=5&offset=${offset+5}`)
+            const res = await axios.get(`${process.env.API_ROUTE}/agenda?limit=5&offset=${offset + 5}`)
             // tambahkan hasil get data agenda baru ke data agenda lama 
             setDataAgendas(dataAgendas.concat(res.data.data))
             // console.log("data length : ", res.data.data.length)
@@ -58,17 +58,17 @@ export default function Agenda({ profiles, settings, agendas }) {
                                         slug={agenda.slug}
                                         image={agenda.cover}
                                         title={agenda.title}
-                                        date={agenda.created_at}   
-                                        description={agenda.description}   
+                                        date={agenda.created_at}
+                                        description={agenda.description}
                                     />
                                 </div>
                             )
                             :
                             // jika tidak ada agenda, tampilkan eror
                             <div className="my-5 py-4 d-flex justify-content-center">
-                                <div className="col col-md-4 my-5 alert text-red border-red d-flex align-items-center justify-content-center" role="alert">
+                                <div className="col col-md-8 col-lg-6 my-5 alert text-red border-red d-flex align-items-center justify-content-center" role="alert">
                                     <div className="text-center">
-                                        <p className="mb-0">Agenda tidak ditemukan.</p>
+                                        <p className="mb-0">Tidak Ada Agenda</p>
                                     </div>
                                 </div>
                             </div>
