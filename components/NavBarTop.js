@@ -4,10 +4,10 @@ import Link from "next/link"
 import ActiveLink from './ActiveLink'
 import { FaPhoneAlt, FaRegEnvelope, FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
-export default function NavBarTop({profile}) {
+export default function NavBarTop({ profile }) {
 
     const [fixedNavbar, setFixedNavbar] = useState("false");
-    
+
     useEffect(() => {
         setFixedNavbar(false);
         window.addEventListener("scroll", () => {
@@ -41,12 +41,12 @@ export default function NavBarTop({profile}) {
                     }
                 `}
             </style>
-            
+
             <div className="d-none d-md-block bg-light py-2 top-of-navbar">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-sm-8">
-                            <div className="">
+                            <div>
                                 <a href={`https://wa.me/${profile.phone_kantor}`} rel="noreferrer" target="_blank" className="text-decoration-none fs-14 text-white-80">
                                     <i className="me-2"><FaPhoneAlt /></i>
                                     {profile.phone_kantor}
@@ -61,16 +61,16 @@ export default function NavBarTop({profile}) {
                         <div className="col-lg-6 col-sm-4">
                             <div className="float-end">
                                 <a href="https://web.facebook.com/" className="mx-2 text-white-80" aria-label="Facebook" rel="noreferrer" target="_blank">
-                                    <i className=""><FaFacebook/></i>
+                                    <i><FaFacebook /></i>
                                 </a>
                                 <a href="https://twitter.com/" className="mx-2 text-white-80" aria-label="Twitter" rel="noreferrer" target="_blank">
-                                    <i className=""><FaTwitter/></i>
+                                    <i><FaTwitter /></i>
                                 </a>
                                 <a href="https://www.youtube.com/" className="mx-2 text-white-80" aria-label="Youtube" rel="noreferrer" target="_blank">
-                                    <i className=""><FaYoutube/></i>
+                                    <i><FaYoutube /></i>
                                 </a>
                                 <a href="https://www.instagram.com/" className="mx-2 text-white-80" aria-label="Instagram" rel="noreferrer" target="_blank">
-                                    <i className=""><FaInstagram/></i>
+                                    <i><FaInstagram /></i>
                                 </a>
                             </div>
                         </div>
@@ -83,7 +83,7 @@ export default function NavBarTop({profile}) {
                     <Link href="/">
                         <a className="navbar-brand d-flex align-items-center">
                             <Image
-                                alt="logo"
+                                alt="Logo Desa"
                                 src={profile.logo}
                                 height="50"
                                 width="50"

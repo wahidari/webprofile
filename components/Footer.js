@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
-export default function Footer({profiles, links}) {
+export default function Footer({ profiles, links }) {
     return (
         <>
             <style jsx>{`
@@ -25,12 +25,18 @@ export default function Footer({profiles, links}) {
                     <div className="row">
                         <div className="col-md-8 col-lg-4 my-2 my-md-0">
                             <h5>Tentang Web</h5>
-                            <Image src={profiles.logo} className="img-fluid mt-1" alt="logo" height={100} width={100} />
+                            <Image
+                                src={profiles.logo}
+                                className="img-fluid mt-1"
+                                alt="Logo Desa"
+                                height={100}
+                                width={100}
+                            />
                             <p className="text-white-80 mt-2">
-                                Website Resmi Desa {profiles.nama_desa}, 
-                                Kecamatan {profiles.nama_kecamatan}, 
-                                Kabupaten {profiles.nama_kabupaten}, 
-                                {" "}{profiles.nama_provinsi}. 
+                                Website Resmi Desa {profiles.nama_desa},
+                                Kecamatan {profiles.nama_kecamatan},
+                                Kabupaten {profiles.nama_kabupaten},
+                                {" "}{profiles.nama_provinsi}.
                                 Media komunikasi dan transparansi Pemerintah Desa
                             </p>
                         </div>
@@ -39,16 +45,16 @@ export default function Footer({profiles, links}) {
                             <ul className="list-unstyled text-white-80 text-decoration-none">
                                 <li className="my-2 pt-1">
                                     <div className="d-flex">
-                                        <i className="me-2"><FaMapMarkerAlt/></i>
+                                        <i className="me-2"><FaMapMarkerAlt /></i>
                                         Jl. Raya {profiles.nama_desa} Kec. {profiles.nama_kecamatan}, {profiles.kode_pos}
                                     </div>
                                 </li>
                                 <li className="my-2 pt-1">
-                                    <i className="me-2"><FaPhoneAlt/></i>
+                                    <i className="me-2"><FaPhoneAlt /></i>
                                     {profiles.phone_kantor}
                                 </li>
                                 <li className="my-2 pt-1">
-                                    <i className="me-2"><FaEnvelope/></i>
+                                    <i className="me-2"><FaEnvelope /></i>
                                     {profiles.email_desa}
                                 </li>
                             </ul>
@@ -77,24 +83,24 @@ export default function Footer({profiles, links}) {
                                     <a href="https://web-anjungan-desa.vercel.app" className="text-decoration-none text-white-80" rel="noreferrer" target="_blank">Sistem Desa</a>
                                 </li>
                                 <li className="my-2 pt-1">
-                                    <a href={links.link_ecommerce || ""} className="text-decoration-none text-white-80" rel="noreferrer" target="_blank">BumDes</a>
+                                    <a href={links.link_ecommerce || "#"} className="text-decoration-none text-white-80" rel="noreferrer" target="_blank">BumDes</a>
                                 </li>
                                 <li className="my-2 pt-1">
-                                    <a href={links.link_ereport || ""} className="text-decoration-none text-white-80" rel="noreferrer" target="_blank">Pengaduan Online</a>
+                                    <a href={links.link_ereport || "#"} className="text-decoration-none text-white-80" rel="noreferrer" target="_blank">Pengaduan Online</a>
                                 </li>
                                 <li className="my-2 pt-1">
-                                    <a href={links.link_eletter || ""} className="text-decoration-none text-white-80" rel="noreferrer" target="_blank">Pengajuan Surat</a>
+                                    <a href={links.link_eletter || "#"} className="text-decoration-none text-white-80" rel="noreferrer" target="_blank">Pengajuan Surat</a>
                                 </li>
                                 <li className="my-2 pt-1">
-                                    <a href={links.link_ehealth || ""} className="text-decoration-none text-white-80" rel="noreferrer" target="_blank">Info Kesehatan</a>
+                                    <a href={links.link_ehealth || "#"} className="text-decoration-none text-white-80" rel="noreferrer" target="_blank">Info Kesehatan</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div className="row pt-3 pb-md-0 mt-4 border-top-dark">
                         <div className="col-md-8  text-center text-md-start">
-                            <p className="text-white-80">Copyright © 
-                                <a href={profiles.website || ""} className="text-decoration-none text-white-80"> Desa {profiles.nama_desa}</a> 2022. 
+                            <p className="text-white-80">Copyright ©
+                                <a href={profiles.website || "#"} className="text-decoration-none text-white-80"> Desa {profiles.nama_desa}</a> 2022.
                             </p>
                         </div>
                         <div className="col-md-4 mb-3 text-center text-md-end ">

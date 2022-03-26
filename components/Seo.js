@@ -13,9 +13,9 @@ export default function Seo({
         <Head>
             {/* Primary Meta Tags */}
             <title>{title}</title>
-            <meta name="description" content={description} />
+            <meta name="description" content={description} key="desc"/>
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <link rel="canonical" href={`${url}${router.asPath}`} />
+            <link rel="canonical" href={`${url}${router.asPath}`} key="canonical"/>
             <meta name="robots" content="follow, index" />
             {/* Open Graph / Facebook */}
             <meta property="og:title" content={title} />

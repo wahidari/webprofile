@@ -1,91 +1,54 @@
-import { FaMapMarkerAlt, FaMoneyBillAlt } from "react-icons/fa";
+import Link from "next/link";
+import { FaMapMarkerAlt, FaRegCalendarAlt, FaRegMoneyBillAlt } from "react-icons/fa";
 
-export default function PembangunanCard({ id, image, title, slug, author, date, excerpt }) {
+export default function PembangunanCard({ id, nama, sumber, tahun, dusun, rw, rt, updated }) {
 
     return (
         <>
             <style jsx>{`
-                .shadow-custom {
-                    box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
+                .card-link:hover {
+                    transition: box-shadow 0.5s ease; /* Animation */
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 20px 0px !important;
+                    transition: all 0.7s ease-out;
+                }
+                .card-link:hover .card-title {
+                    color: #0d6efd !important;
+                    transition: color 0.7s ease-out;
+                }
+                .stretched-link {
+                    color: #212529;
+                    text-decoration: none;
+                    font-weight: 500;
+                }
+                .shadow-card {
+                    box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+                }
+                .mt-n1 {
+                    margin-top: -0.1rem !important;
                 }
             `}</style>
 
             <div className="col-md-6 col-lg-4">
-                <div className="card shadow-custom border-0 h-100">
+                <div className="card card-link shadow-card border-0 h-100">
                     <div className="card-body">
-                        <h6 className="mb-3 fs-18">Pembangunan Jembatan Penghubung Persawahan</h6>
-                        <div className="d-flex">
-                            <p className="text-muted mb-0 me-4">
-                                <i className="me-2"><FaMapMarkerAlt /></i>
-                                RT 01
-                            </p>
-                            <p className="text-muted mb-3">
-                                <i className="me-2"><FaMoneyBillAlt /></i>
-                                Rp. 119.655,-
-                            </p>
+                        <Link href={`/pembangunan/${id}`}>
+                            <a className="stretched-link">
+                                <h5 className="card-title mb-3">
+                                    {nama}
+                                </h5>
+                            </a>
+                        </Link>
+                        <div className="text-muted fs-15 d-flex mb-1">
+                            <i className="me-2 mt-n1"><FaMapMarkerAlt /></i>
+                            {dusun} - RW {rw} - RT {rt}
                         </div>
-                        <div className="progress">
-                            <div className="progress-bar w-25 bg-red" aria-label="Progress" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                        <div className="text-muted fs-15 d-flex mb-1">
+                            <i className="me-2 mt-n1"><FaRegMoneyBillAlt /></i>
+                            {sumber}
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div className="col-md-6 col-lg-4">
-                <div className="card shadow-custom border-0 h-100">
-                    <div className="card-body">
-                        <h6 className="mb-3 fs-18">Pembangunan MCK dan Tempat Wudhu Masjid</h6>
-                        <div className="d-flex">
-                            <p className="text-muted mb-0 me-4">
-                                <i className="me-2"><FaMapMarkerAlt /></i>
-                                RT 02
-                            </p>
-                            <p className="text-muted mb-3">
-                                <i className="me-2"><FaMoneyBillAlt /></i>
-                                Rp. 219.655,-
-                            </p>
-                        </div>
-                        <div className="progress">
-                            <div className="progress-bar w-50 bg-yellow" aria-label="Progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="col-md-6 col-lg-4">
-                <div className="card shadow-custom border-0 h-100">
-                    <div className="card-body">
-                        <h6 className="mb-3 fs-18">Pembangunan Jalan Usaha Pertanian</h6>
-                        <div className="d-flex">
-                            <p className="text-muted mb-0 me-4">
-                                <i className="me-2"><FaMapMarkerAlt /></i>
-                                RT 03
-                            </p>
-                            <p className="text-muted mb-3">
-                                <i className="me-2"><FaMoneyBillAlt /></i>
-                                Rp. 319.655,-
-                            </p>
-                        </div>
-                        <div className="progress">
-                            <div className="progress-bar w-75 bg-blue" aria-label="Progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="col-md-6 col-lg-4">
-                <div className="card shadow-custom border-0 h-100">
-                    <div className="card-body">
-                        <h6 className="mb-3 fs-18">Pembangunan Gorong-Gorong Jalan</h6>
-                        <div className="d-flex">
-                            <p className="text-muted mb-0 me-4">
-                                <i className="me-2"><FaMapMarkerAlt /></i>
-                                RT 04
-                            </p>
-                            <p className="text-muted mb-3">
-                                <i className="me-2"><FaMoneyBillAlt /></i>
-                                Rp. 419.655,-
-                            </p>
-                        </div>
-                        <div className="progress">
-                            <div className="progress-bar w-100 bg-green" aria-label="Progress" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                        <div className="text-muted fs-15 d-flex">
+                            <i className="me-2 mt-n1"><FaRegCalendarAlt /></i>
+                            {tahun}
                         </div>
                     </div>
                 </div>

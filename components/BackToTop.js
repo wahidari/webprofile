@@ -36,7 +36,7 @@ export default function BackToTop() {
             `}</style>
 
             {showButton && (
-                <button onClick={scrollToTop} type="button" className="btn bg-white rounded-pill shadow btn-back-to-top">
+                <button onClick={scrollToTop} aria-label="Back to top" type="button" className="btn bg-white rounded-pill shadow btn-back-to-top">
                     <i className="mt-n2" ><FaArrowUp /></i>
                 </button>
             )}
