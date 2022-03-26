@@ -55,7 +55,7 @@ export default function SistemDesa({ links }) {
                         <div className="row gx-4 gy-4">
                             <div className="col-12 col-sm-6 col-xl-3">
                                 <div className="card border-0 shadow-custom card-link h-100" data-aos="fade-up" data-aos-duration="500">
-                                    <a href={links.link_ecommerce || ""} className="stretched-link" aria-label="Pengaduan" rel="noreferrer" target="_blank"></a>
+                                    <a href={links.link_ecommerce || "#"} className="stretched-link" aria-label="Pengaduan" rel="noreferrer" target="_blank"></a>
                                     <div className="card-body">
                                         <div className="d-flex align-items-center">
                                             <div className="icon-shape icon-sm icon-shape-blue rounded me-3 p-2">
@@ -73,7 +73,7 @@ export default function SistemDesa({ links }) {
                             </div>
                             <div className="col-12 col-sm-6 col-xl-3">
                                 <div className="card border-0 shadow-custom card-link h-100" data-aos="fade-up" data-aos-duration="1000">
-                                    <a href={links.link_ereport || ""} className="stretched-link" aria-label="Pengaduan" rel="noreferrer" target="_blank"></a>
+                                    <a href={links.link_ereport || "#"} className="stretched-link" aria-label="Pengaduan" rel="noreferrer" target="_blank"></a>
                                     <div className="card-body">
                                         <div className="d-flex align-items-center">
                                             <div className="icon-shape icon-sm icon-shape-red rounded me-3 p-2">
@@ -91,7 +91,7 @@ export default function SistemDesa({ links }) {
                             </div>
                             <div className="col-12 col-sm-6 col-xl-3">
                                 <div className="card border-0 shadow-custom card-link h-100" data-aos="fade-up" data-aos-duration="1500">
-                                    <a href={links.link_eletter || ""} className="stretched-link" aria-label="Surat" rel="noreferrer" target="_blank"></a>
+                                    <a href={links.link_eletter || "#"} className="stretched-link" aria-label="Surat" rel="noreferrer" target="_blank"></a>
                                     <div className="card-body">
                                         <div className="d-flex align-items-center align-center">
                                             <div className="icon-shape icon-sm icon-shape-green rounded me-3 p-2">
@@ -109,7 +109,7 @@ export default function SistemDesa({ links }) {
                             </div>
                             <div className="col-12 col-sm-6 col-xl-3">
                                 <div className="card border-0 shadow-custom card-link h-100" data-aos="fade-up" data-aos-duration="2000">
-                                    <a href={links.link_ehealth || ""} className="stretched-link" aria-label="Kesehatan" rel="noreferrer" target="_blank"></a>
+                                    <a href={links.link_ehealth || "#"} className="stretched-link" aria-label="Kesehatan" rel="noreferrer" target="_blank"></a>
                                     <div className="card-body">
                                         <div className="d-flex align-items-center">
                                             <div className="icon-shape icon-sm icon-shape-yellow rounded me-3 p-2">
