@@ -32,7 +32,7 @@ export default function AgendaCard({ slug, image, title, date, description }) {
 				<div className="row g-0">
 					<div className="col-sm-4 d-flex align-items-center">
 						<Image
-							alt="Agenda Image"
+							alt="Image Agenda"
 							src={image}
 							width="200"
 							height="160"

@@ -24,7 +24,7 @@ export default function PostList({ image, title, slug, date }) {
 				<div className="row random-post">
 					<div className="col-4">
 						<Image
-							alt="Image post"
+							alt="Image Berita"
 							src={image}
 							width="200"
 							height="160"

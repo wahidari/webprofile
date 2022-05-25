@@ -18,13 +18,13 @@ export default function AgendaList({ image, title, slug, date }) {
 						transition: color 0.7s ease-out;
 					}
 				`}
-			</style>
+				</style>
 
 			<div className="card border-0 my-2">
 				<div className="row random-post">
 					<div className="col-4">
 						<Image
-							alt="Image post"
+							alt="Image Agenda"
 							src={image}
 							width="200"
 							height="160"

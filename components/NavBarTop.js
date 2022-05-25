@@ -30,7 +30,7 @@ export default function NavBarTop({ profile }) {
 						color: #6c757d;
 					}
 					.dropdown-menu {
-						min-width: 13rem; 
+						min-width: 12rem; 
 					}
 					.top-of-navbar a:hover {
 						color: #0d6efd;
@@ -202,7 +202,7 @@ export default function NavBarTop({ profile }) {
 								<ul className="dropdown-menu" aria-labelledby="publikasiDropdown">
 									<li>
 										<ActiveLink activeClassName="active" href="/pembangunan">
-											<a className="nav-link ms-3 ms-md-2">Pembangunan Desa</a>
+											<a className="nav-link ms-3 ms-md-2">Pembangunan</a>
 										</ActiveLink>
 									</li>
 									<li>
@@ -212,10 +212,22 @@ export default function NavBarTop({ profile }) {
 									</li>
 								</ul>
 							</li>
-							<li className="nav-item ms-lg-1">
-								<ActiveLink activeClassName="active" href="/lapak">
-									<a className="nav-link">Lapak</a>
-								</ActiveLink>
+							<li className="nav-item dropdown ms-lg-1">
+								<a className="nav-link dropdown-toggle" href="#" id="produkDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Produk
+								</a>
+								<ul className="dropdown-menu" aria-labelledby="produkDropdown">
+									<li>
+										<ActiveLink activeClassName="active" href="/bumdes">
+											<a className="nav-link ms-3 ms-md-2">BumDes</a>
+										</ActiveLink>
+									</li>
+									<li>
+										<ActiveLink activeClassName="active" href="/umkm">
+											<a className="nav-link ms-3 ms-md-2">UMKM</a>
+										</ActiveLink>
+									</li>
+								</ul>
 							</li>
 							<li className="nav-item ms-lg-1">
 								<ActiveLink activeClassName="active" href="/covid">

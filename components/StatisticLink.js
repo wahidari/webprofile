@@ -22,7 +22,7 @@ export default function StatisticLink() {
 						transition: all 1s ease-in-out;
 					}
 					.icon {
-							font-size: 32px;
+						font-size: 32px;
 					}
 					.masthead-followup-icon {
 						width: 30%;

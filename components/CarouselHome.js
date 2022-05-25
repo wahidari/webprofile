@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 export default function CarouselHome({ heros }) {
+
 	return (
 		<>
 			<style jsx>
@@ -73,7 +74,7 @@ export default function CarouselHome({ heros }) {
 				<div className="carousel-inner">
 					<div className="carousel-item active">
 						<Image
-							alt="Carousel"
+							alt="Image Carousel 1"
 							src={heros[0].image}
 							width="1920"
 							height="960"
@@ -87,7 +88,7 @@ export default function CarouselHome({ heros }) {
 					</div>
 					<div className="carousel-item">
 						<Image
-							alt="Carousel"
+							alt="Image Carousel 2"
 							src={heros[1].image}
 							width="1920"
 							height="960"
@@ -101,7 +102,7 @@ export default function CarouselHome({ heros }) {
 					</div>
 					<div className="carousel-item">
 						<Image
-							alt="Carousel"
+							alt="Image Carousel 3"
 							src={heros[2].image}
 							width="1920"
 							height="960"

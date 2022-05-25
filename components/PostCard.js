@@ -38,7 +38,7 @@ export default function PostCard({ image, title, slug, date, description }) {
 
 			<article className="card card-link shadow-card border-0 h-100">
 				<Image
-					alt="Post Image"
+					alt="Image Berita"
 					src={image}
 					width="350"
 					height="200"
