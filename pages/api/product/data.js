@@ -7,7 +7,7 @@ export const products = [
         "price": "10000",
         "image": "https://images.unsplash.com/photo-1518843875459-f738682238a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dmVnZXRhYmxlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=492&height=364&q=60",
         "phone": "628123456789",
-        "seller": "Seller A",
+        "bumdes": "BUM Desa A",
         "description": "Lorem Ipsum is simply dummy text of the printing"
     },
     {
@@ -18,7 +18,7 @@ export const products = [
         "price": "20000",
         "image": "https://images.unsplash.com/photo-1597362925123-77861d3fbac7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmVnZXRhYmxlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=492&height=364&q=60",
         "phone": "628123456789",
-        "seller": "Seller B",
+        "bumdes": "BUM Desa B",
         "description": "Lorem Ipsum is simply dummy text of the printing"
     },
     {
@@ -29,7 +29,7 @@ export const products = [
         "price": "30000",
         "image": "https://images.unsplash.com/photo-1522184216316-3c25379f9760?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHZlZ2V0YWJsZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=492&height=364&q=60",
         "phone": "628123456789",
-        "seller": "Seller C",
+        "bumdes": "BUM Desa C",
         "description": "Lorem Ipsum is simply dummy text of the printing"
     },
     {
@@ -40,7 +40,7 @@ export const products = [
         "price": "25000",
         "image": "https://images.unsplash.com/photo-1601648764658-cf37e8c89b70?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fHZlZ2V0YWJsZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=492&height=364&q=60",
         "phone": "628123456789",
-        "seller": "Seller D",
+        "bumdes": "BUM Desa D",
         "description": "Lorem Ipsum is simply dummy text of the printing"
     },
     {
@@ -51,7 +51,7 @@ export const products = [
         "price": "15000",
         "image": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGZydWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=492&height=364&q=60",
         "phone": "628123456789",
-        "seller": "Seller E",
+        "bumdes": "BUM Desa E",
         "description": "Lorem Ipsum is simply dummy text of the printing"
     },
     {
@@ -62,7 +62,7 @@ export const products = [
         "price": "40000",
         "image": "https://images.unsplash.com/photo-1439127989242-c3749a012eac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fGZydWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=492&height=364&q=60",
         "phone": "628123456789",
-        "seller": "Seller F",
+        "bumdes": "BUM Desa F",
         "description": "Lorem Ipsum is simply dummy text of the printing"
     },
     {
@@ -73,7 +73,7 @@ export const products = [
         "price": "50000",
         "image": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fGZydWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=492&height=364&q=60",
         "phone": "628123456789",
-        "seller": "Seller G",
+        "bumdes": "BUM Desa G",
         "description": "Lorem Ipsum is simply dummy text of the printing"
     }
 ]
