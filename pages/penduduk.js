@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import NavBarTop from "@components/NavBarTop";
 import Footer from "@components/Footer";
 import Breadcrumb from "@components/Breadcrumb";
@@ -8,33 +9,7 @@ import { Bar, Doughnut, Pie } from 'react-chartjs-2';
 
 ChartJS.register(ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement);
 const colors = ["#36b9cc", "#1cc88a", "#6f42c1", "#e74a3b", "#fd7e14", "#f6c23e", "#84cc16", "#22c55e", "#2563eb", "#f43f5e", "#8b5cf6", "#ea580c", "#facc15"];
-const optionsHorizontalBarChart = {
-    indexAxis: 'y',
-    // layout: {
-    //   padding: 20
-    // },
-    plugins: {
-        legend: {
-            display: false
-        }
-    },
-    scales: {
-        x: {
-            ticks: {
-                color: "#888",
-            }
-        },
-        y: {
-            ticks: {
-                color: "#888",
-                autoSkip: false,
-                font: {
-                    size: 11
-                }
-            },
-        }
-    }
-};
+
 const optionsBarChart = {
     plugins: {
         legend: {
@@ -67,12 +42,43 @@ const options = {
     }
 };
 
-export default function Penduduk({ profiles, settings, gender, education, religion, pekerjaan, status, usia }) {
+export default function Penduduk({ profiles, settings, gender, education, religion, pekerjaan, status, usia, pendidikan }) {
+    const [windowWidth, setWindowWidth] = useState()
+
+    useEffect(() => {
+        setWindowWidth(window.innerWidth)
+    }, [windowWidth])
+
+    const optionsHorizontalBarChart = {
+        indexAxis: 'y',
+        plugins: {
+            legend: {
+                display: false
+            }
+        },
+        scales: {
+            x: {
+                ticks: {
+                    color: "#888",
+                }
+            },
+            y: {
+                ticks: {
+                    color: "#888",
+                    autoSkip: windowWidth > 500 ? false : true,
+                    // autoSkip: false,
+                    font: {
+                        size: 11
+                    }
+                },
+            }
+        }
+    };
 
     const dataGender = populateData(gender, "label");
     const totalDataGender = getTotalData(gender);
 
-    const dataEducation = populateData(education);
+    const dataEducation = populateData(education, "nama");
     const totalDataEducation = getTotalData(education);
 
     const dataReligion = populateData(religion, "nama");
@@ -177,11 +183,11 @@ export default function Penduduk({ profiles, settings, gender, education, religi
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {education.map(item =>
+                                        {education.map((item, index) =>
                                             <tr key={item.id}>
-                                                <td>{item.id}</td>
-                                                <td>{item.name}</td>
-                                                <td>{item.total}</td>
+                                                <td>{index + 1}</td>
+                                                <td>{item.nama}</td>
+                                                <td>{item.jumlah}</td>
                                             </tr>
                                         )}
 
@@ -391,7 +397,7 @@ export async function getServerSideProps({ res }) {
     const settings = await getAllSettings.json();
     const getDataGender = await fetch(`${process.env.API_ROUTE}/statistik/jeniskelamin`);
     const gender = await getDataGender.json();
-    const getDataEducation = await fetch(`${process.env.BASE_URL}/api/education`);
+    const getDataEducation = await fetch(`${process.env.API_ROUTE}/statistik/pendidikan`);
     const education = await getDataEducation.json();
     const getDataReligion = await fetch(`${process.env.API_ROUTE}/statistik/agama`);
     const religion = await getDataReligion.json();
