@@ -1,7 +1,12 @@
 import Image from "next/image"
 import Link from "next/link";
 
-export default function BumdesCard({ slug, name, image, description, bumdes }) {
+export default function BumdesCard({ slug, name, description, harga, photos }) {
+	// console.log(photos[0])
+	let photo = process.env.API_ROUTE + "/media/produk.png"
+	if (photos.length > 0) {
+		photo = photos[0].photo
+	}
 
 	return (
 		<>
@@ -30,20 +35,20 @@ export default function BumdesCard({ slug, name, image, description, bumdes }) {
 			<div className="card card-img-hover-zoom card-link h-100 shadow-custom border-0 rounded-3">
 				<Image
 					alt={name}
-					src={image}
+					src={photo}
 					width={270}
 					height={200}
 					quality={90}
 					className="img-fluid rounded-top"
 				/>
 				<div className="card-body">
-					<Link href={`/bumdes/slug`}>
+					<Link href={`/bumdes/${slug}`}>
 						<a className="stretched-link"><h5 className="card-title lh-sm mb-2">{name}</h5></a>
 					</Link>
 					<p className="mb-0 text-14 text-secondary small">{description}</p>
 				</div>
 				<div className="card-footer bg-white">
-					<p className="mb-0 fs-15 fw-medium text-color-muted">{bumdes}</p>
+					<p className="mb-0 fw-medium">Rp. {harga}</p>
 				</div>
 			</div>
 		</>
