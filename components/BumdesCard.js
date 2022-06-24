@@ -1,11 +1,11 @@
 import Image from "next/image"
 import Link from "next/link";
 
-export default function BumdesCard({ slug, name, description, harga, photos }) {
-	// console.log(photos[0])
+export default function BumdesCard({ slug, name, description, harga, image }) {
+	// console.log(image[0])
 	let photo = process.env.API_ROUTE + "/media/produk.png"
-	if (photos.length > 0) {
-		photo = photos[0].photo
+	if (image.length > 0) {
+		photo = image
 	}
 
 	return (
