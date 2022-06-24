@@ -116,10 +116,9 @@ export default function Bumdes({ profiles, settings, bumdes }) {
 									<BumdesCard
 										slug={item.id}
 										name={item.nama_produk}
-										image="https://images.unsplash.com/photo-1518843875459-f738682238a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dmVnZXRhYmxlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=492&height=364&q=60"
 										description={item.deskripsi}
 										harga={item.harga}
-										photos={item.photo} />
+										image={item.photo} />
 								</div>
 							)
 							:
