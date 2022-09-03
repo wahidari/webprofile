@@ -1,12 +1,14 @@
 module.exports = {
   env: {
     BASE_URL: "https://webprofiletes.vercel.app",
-    API_ROUTE: "http://127.0.0.1:8000",
+    // API_ROUTE: "http://127.0.0.1:8000",
+    API_ROUTE: "https://api.desa.arkatama.online",
     // API_ROUTE: "https://coredesa.arkatama.dev",
   },
   reactStrictMode: true,
   images: {
     domains: [
+      'api.desa.arkatama.online',
       'coredesa.arkatama.dev',
       'images.unsplash.com',
       'cdn.pixabay.com',
